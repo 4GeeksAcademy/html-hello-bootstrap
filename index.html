@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram feed with Bootstrap</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-light">
+            <div class="col-9 p-3">
+                <i class="fa-brands fa-instagram fa-2l"> Instagram </i>       
+            </div>
+
+            <div class="col-2 mt-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat"> Create a new post </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel"> Create a new post </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                           
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label"> Caption:</label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                              <button type="button" class="btn btn-secondary mt-2 "> <i class="fa-solid fa-camera"></i> </button>
+                              <button type="button" class="btn btn-secondary mt-2 "> <i class="fa-solid fa-location-dot"></i> </button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">publish</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-1">
+                <div class="btn-group mt-2 " role="group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"> Profile </a></li>
+                      <li><a class="dropdown-item" href="#"> Accesibility </a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and Data </a></li>
+                      <li><a class="dropdown-item text-danger " href="#"> Log out</a></li>
+                    </ul>
+                  </div>
+            </div>
+
+        </div>
+        <ul class="nav justify-content-center nav-tabs mt-2 mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="true"> <i class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab" tabindex="0"> 
+                <div class="row">
+                    <div class="card col-4" id="pic">
+                        <img src="https://iso.500px.com/wp-content/uploads/2022/09/Honister-Pass-By-Daniel-Casson-2.jpeg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card col-4" id="pic">
+                        <img src="https://www.lukas-petereit.com/wp-content/uploads/2017/10/Aurora-Borealis-Lofoten-Photography-by-Lukas-Petereit-Northern-Lights-in-Norway-1.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card col-4" id="pic">
+                        <img src="https://www.anthroencyclopedia.com/sites/www.anthroencyclopedia.com/files/landscape.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card col-4 mt-2" id="pic">
+                        <img src="https://images.ctfassets.net/0wjmk6wgfops/31YNIkrJ1K4Om5oRVstZb3/9d54a9e1b90a09df15f19f14be243ee3/3914d68437_4f6284e8-1c06-4dfa-b980-c6e2e098b369.jpg?w=1280&h=800&fit=fill&f=center&q=80" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card col-4 mt-2" id="pic">
+                        <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card col-4 mt-2" id="pic">
+                        <img src="https://media.macphun.com/img/uploads/customer/blog/504/15360613335b8e6f95f28388.44480948.jpg?q=85&w=1680" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card col-4 mt-2" id="pic">
+                        <img src="https://www.muchbetteradventures.com/magazine/content/images/2021/06/Beautiful-landscapes-morocco-desert.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card col-4 mt-2" id="pic">
+                        <img src="https://www.telegraph.co.uk/content/dam/Travel/2018/August/Exmoor-National-Park-GettyImages-582466383.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card col-4 mt-2" id="pic">
+                        <img src="https://i.guim.co.uk/img/media/cfb3af74aae4b8ad187d9ae625fe44057841bb0f/0_205_5667_3400/master/5667.jpg?width=1200&quality=85&auto=format&fit=max&s=a73c83a36051e3413333780dfc788885" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                
+                
+            </div>               
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="card border-secundary mb-3 mx-auto" style="max-width: 30rem;">
+                    <div class="card-header bg-transparent border-secundary"><h5>Mountains</h5></div>
+                    <div class="card h-100">
+                        <img src="https://iso.500px.com/wp-content/uploads/2022/09/Honister-Pass-By-Daniel-Casson-2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                          <i class="fa-regular fa-heart fa-xl"></i>
+                          <i class="fa-regular fa-comment fa-xl"></i>
+                          <i class="fa-regular fa-paper-plane fa-xl"></i>
+                          <i class="fa-regular fa-bookmark fa-xl" id="bookmark"></i>
+                          <p class="card-title" id="txt"><strong>480 Likes</strong></p>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia mauris id tempus efficitur. Nullam pharetra congue neque eget dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+                
+                </div>    
+                <div class="card border-secundary mb-3 mx-auto" style="max-width: 30rem;">
+                    <div class="card-header bg-transparent border-secundary"><h5>Northern Lights</h5></div>
+                    <div class="card h-100">
+                        <img src="https://www.lukas-petereit.com/wp-content/uploads/2017/10/Aurora-Borealis-Lofoten-Photography-by-Lukas-Petereit-Northern-Lights-in-Norway-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                          <i class="fa-regular fa-heart fa-xl"></i>
+                          <i class="fa-regular fa-comment fa-xl"></i>
+                          <i class="fa-regular fa-paper-plane fa-xl"></i>
+                          <i class="fa-regular fa-bookmark fa-xl" id="bookmark"></i>
+                          <p class="card-title" id="txt"><strong>1.250 likes</strong></p>
+                          <p class="card-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ultricies quis erat eget congue. Nam sollicitudin metus.</p>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="card border-secundary mb-3 mx-auto" style="max-width: 30rem;">
+                    <div class="card-header bg-transparent border-secundary"><h5>Peace</h5></div>
+                    <div class="card h-100">
+                        <img src="https://media.macphun.com/img/uploads/customer/blog/504/15360613335b8e6f95f28388.44480948.jpg?q=85&w=1680" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <i class="fa-regular fa-heart fa-xl"></i>
+                          <i class="fa-regular fa-comment fa-xl"></i>
+                          <i class="fa-regular fa-paper-plane fa-xl"></i>
+                          <i class="fa-regular fa-bookmark fa-xl" id="bookmark"></i>
+                          <p class="card-title" id="txt"><strong>50 Likes</strong></p>
+                          <p class="card-text">Pellentesque et ornare libero. Aliquam consectetur ex lorem, a malesuada magna fermentum non. Mauris a nunc quam. Etiam tincidunt, enim nec fermentum blandit, magna lectus suscipit purus, quis hendrerit tellus tellus id odio. Donec dictum dui vel condimentum cursus.</p>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="card border-secundary mb-3 mx-auto" style="max-width: 30rem;">
+                    <div class="card-header bg-transparent border-secundary"><h5>Silence</h5></div>
+                    <div class="card h-100">
+                        <img src="https://www.anthroencyclopedia.com/sites/www.anthroencyclopedia.com/files/landscape.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                          <i class="fa-regular fa-heart fa-xl"></i>
+                          <i class="fa-regular fa-comment fa-xl"></i>
+                          <i class="fa-regular fa-paper-plane fa-xl"></i>
+                          <i class="fa-regular fa-bookmark fa-xl" id="bookmark"></i>
+                          <p class="card-title" id="txt"><strong>300 Likes</strong></p>
+                          <p class="card-text">Donec libero diam, commodo quis nunc eu, mattis cursus diam. </p>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="card border-secundary mb-3 mx-auto" style="max-width: 30rem;">
+                    <div class="card-header bg-transparent border-secundary"><h5>Sky</h5></div>
+                    <div class="card h-100">
+                        <img src="https://images.ctfassets.net/0wjmk6wgfops/31YNIkrJ1K4Om5oRVstZb3/9d54a9e1b90a09df15f19f14be243ee3/3914d68437_4f6284e8-1c06-4dfa-b980-c6e2e098b369.jpg?w=1280&h=800&fit=fill&f=center&q=80" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                          <i class="fa-regular fa-heart fa-xl"></i>
+                          <i class="fa-regular fa-comment fa-xl"></i>
+                          <i class="fa-regular fa-paper-plane fa-xl"></i>
+                          <i class="fa-regular fa-bookmark fa-xl" id="bookmark"></i>
+                          <p class="card-title" id="txt"><strong>869 Likes</strong></p>
+                          <p class="card-text">urabitur sed nibh et erat congue fermentum. Ut fringilla egestas tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet blandit eros. Fusce laoreet pulvinar varius. Vestibulum ante.</p>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="card border-secundary mb-3 mx-auto" style="max-width: 30rem;">
+                    <div class="card-header bg-transparent border-secundary"><h5>Paradise</h5></div>
+                    <div class="card h-100">
+                        <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                          <i class="fa-regular fa-heart fa-xl"></i>
+                          <i class="fa-regular fa-comment fa-xl"></i>
+                          <i class="fa-regular fa-paper-plane fa-xl"></i>
+                          <i class="fa-regular fa-bookmark fa-xl" id="bookmark"></i>
+                          <p class="card-title" id="txt"><strong>8.500 Likes</strong></p>
+                          <p class="card-text">Proin varius congue consectetur. Cras efficitur, risus vitae rutrum facilisis, nisi dui tempor justo, at dictum nisl dolor ac enim. Aliquam erat volutpat. Fusce neque risus, volutpat semper mauris vitae, pretium fermentum eros. Aenean vehicula pellentesque euismod. Quisque ipsum orci, facilisis a enim vel, semper consequat eros. Proin ac aliquet dolor. Vivamus viverra eleifend vulputate.Proin varius congue consectetur. Cras efficitur, risus vitae rutrum facilisis, nisi dui tempor justo, at dictum nisl dolor ac enim. Aliquam erat volutpat. Fusce neque risus, volutpat semper mauris vitae, pretium fermentum eros. Aenean vehicula pellentesque euismod. Quisque ipsum orci, facilisis a enim vel, semper consequat eros. Proin ac aliquet dolor. Vivamus viverra eleifend vulputate.</p>
+                        </div>
+                      </div>
+
+                </div>
+          </div>
+
+
+     
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
