@@ -1,0 +1,12 @@
+#brand{ 
+    font-size: 30px;
+    color: #212F3D;
+}
+#carouselExampleDark img {
+    object-fit: cover;
+    height: 500PX;
+}
+.mah img{
+    width:100%;
+   
+}
